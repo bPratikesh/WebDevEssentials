@@ -3,10 +3,15 @@ h1 {
   color: lawngreen;
 }
 
+/* class selector */
 .ab {
   background-color: brown;
 }
-
+/* id selector */
 #head {
   margin: 30px;
+}
+/* universal selector */
+* {
+  text-align: center;
 }
