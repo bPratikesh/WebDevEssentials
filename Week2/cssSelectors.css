@@ -1,0 +1,12 @@
+/* tag selector */
+h1 {
+  color: lawngreen;
+}
+
+.ab {
+  background-color: brown;
+}
+
+#head {
+  margin: 30px;
+}
