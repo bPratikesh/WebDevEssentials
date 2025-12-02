@@ -5,10 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="cssSelectors.css" />
+    <style>
+      /* Descendant selector */
+      /* div p {
+        color: red;
+      } */
+
+      /* child selector */
+      /* div > p {
+        color: orange;
+      } */
+
+      /* adjacent sibling */
+      /* div + p {
+        color: brown;
+      } */
+
+      /* general sibling */
+      /* div ~ p {
+        color: blue;
+      } */
+
+      /* attribute selector */
+      /* a[target] {
+        background-color: violet;
+      } */
+    </style>
   </head>
   <body>
-    <h1 class="ab">Tag Selector</h1>
+    <!-- <h1 class="ab">Tag Selector</h1>
     <h2 class="ab">Class selector example</h2>
-    <h2 id="head">ID selector</h2>
+    <h2 id="head">ID selector</h2> -->
+
+    <p>This is para1</p>
+    <div>
+      <p>This is Para2</p>
+      <section>
+        <p>This is para3</p>
+      </section>
+      <p>This is para4</p>
+    </div>
+    <p>This is Para5</p>
+    <p>This is Para6</p>
+
+    <a href="" target="_blank">Link1</a>
+    <a href="">Link2</a>
   </body>
 </html>
