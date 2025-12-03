@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        display: inline-block;
+        border: 5px solid red;
+        width: 200px;
+        height: 200px;
+        margin: 5px;
+      }
+      /* positions are static,relative,absolute, fixed */
+      #box3 {
+        /* relative is from its original position position it will move/change accordingly */
+        position: relative;
+        top: 20px;
+        left: 30px;
+      }
+
+      #box2 {
+        /* absolute is from its parents position position it will move/change accordingly */
+        position: absolute;
+        top: 20px;
+        left: 30px;
+      }
+
+      #box1 {
+        /* fixed is the particular div will be fixed to the viewport */
+        position: fixed;
+        top: 20px;
+        left: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+  </body>
+</html>
