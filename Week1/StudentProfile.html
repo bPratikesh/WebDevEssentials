@@ -4,6 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student|Profile</title>
+    <style>
+      textarea {
+        width: 15%;
+      }
+
+      label {
+        font-weight: bold;
+        display: inline-block;
+        width: 160px;
+        margin-bottom: 5px;
+        vertical-align: top;
+      }
+      input[type="text"],
+      input[type="number"],
+      input[type="date"],
+      textarea {
+        width: 250px;
+      }
+      .gender-options {
+        display: inline-block;
+        width: 250px;
+        margin-right: 50px;
+      }
+    </style>
   </head>
   <body>
     <center style="margin-top: 90px">
@@ -23,13 +47,28 @@
           <input type="number" id="age" placeholder="Age" /><br />
 
           <label for="gender">Gender:</label>
-          <input type="radio" id="gender" value="Male" />
+          <span class="gender-options">
+            <input
+              type="radio"
+              id="gender"
+              value="Male"
+              style="margin-left: 50px"
+              checked
+            />Male &nbsp;&nbsp;&nbsp;&nbsp;
+            <input
+              type="radio"
+              id="gender"
+              value="Female"
+              style="margin-left: 50px"
+            />Female
+          </span>
+          <br />
+          <label for="curAddr">Current Address:</label>
+          <textarea name="address" id="curAddr"></textarea>
+          <br />
 
-          <label for="curAddr">Current Address</label>
-          <input type="text" id="curAddr" /><br />
-
-          <label for="perAddr">Permenant Address</label>
-          <input type="text" id="perAddr" /><br />
+          <label for="perAddr">Permenant Address:</label>
+          <textarea name="permenantAddress" id="perAddr"></textarea><br />
 
           <input type="submit" value="Create" />
         </form>

@@ -6,6 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="cssSelectors.css" />
     <style>
+      #temp {
+        font-size: large;
+      }
+
       /* Descendant selector */
       /* div p {
         color: red;
@@ -30,6 +34,21 @@
       /* a[target] {
         background-color: violet;
       } */
+
+      /* pseudo class selector */
+      a:link {
+        color: blue;
+      }
+      a:visited {
+        color: greenyellow;
+      }
+      a:hover {
+        color: orange;
+        background-color: black;
+      }
+      a:active {
+        color: crimson;
+      }
     </style>
   </head>
   <body>
@@ -50,5 +69,14 @@
 
     <a href="" target="_blank">Link1</a>
     <a href="">Link2</a>
+
+    <br /><br />
+
+    <div id="temp">
+      <a href="https://www.amazon.com/">Amazon</a>
+      <a href="https://www.Nike.com/">Nike</a>
+      <a href="https://www.Flipkart.com/">Flipkart</a>
+      <a href="https://www.myntra.com/">Myntra</a>
+    </div>
   </body>
 </html>
