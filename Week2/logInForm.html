@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <style>
+      .login {
+        margin: 200px 350px 200px 350px;
+        padding: 30px;
+        background-color: #f1e7ba;
+      }
+
+      label {
+        margin: 10px;
+      }
+      input[type="text"],
+      input[type="password"],
+      input[type="submit"] {
+        margin: 10px;
+        width: 100%;
+        border: none;
+        height: 30px;
+        border-radius: 6px;
+      }
+      #btn {
+        color: white;
+        border: none;
+        border-radius: 30px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login">
+      <label for="name" style="color: white">Enter Username:</label><br />
+      <input type="text" placeholder="Enter email ID" /><br /><br />
+
+      <label for="pass" style="color: white">Enter Password:</label><br />
+      <input type="password" placeholder="Password here" /><br />
+
+      <input
+        type="submit"
+        value="Login"
+        id="btn"
+        style="background-color: #e84420"
+      />
+    </div>
+  </body>
+</html>
