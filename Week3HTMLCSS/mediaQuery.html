@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+    <style>
+      img {
+        height: 400px;
+        width: 700px;
+      }
+      .secondImg {
+        display: none;
+      }
+      @media only screen and (max-width: 700px) {
+        .firstImage {
+          display: none;
+        }
+        .secondImg {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img src="firstImg.png" alt="above 700px" class="firstImage" />
+
+    <img src="secondImg.png" alt="below 700px" class="secondImg" />
+  </body>
+</html>
