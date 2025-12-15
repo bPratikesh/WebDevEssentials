@@ -11,12 +11,12 @@
 }
 .firstDiv {
   width: 60%;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   height: 70%;
 }
 .secondDiv {
   width: 40%;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   height: 70%;
 }
 
@@ -26,4 +26,15 @@
   /* border: 2px solid black; */
   width: 100%;
   height: 300px;
+}
+footer {
+  border: 2px solid black;
+}
+.contact-link {
+  text-decoration: none;
+  color: black;
+}
+
+.contact-link:hover {
+  color: #6f7576;
 }
