@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function add(n1, n2) {
+        var res = n1 + n2;
+        document.writeln(res);
+      }
+      add(20, 30);
+
+      function subtract(n1, n2) {
+        var res = n2 - n1;
+        return res;
+      }
+      document.writeln(subtract(10, 15));
+
+      function divide() {
+        var n1 = 100,
+          n2 = 2;
+        var res = n1 / n2;
+        return res;
+      }
+      document.writeln(divide());
+
+      var product = function (x, y) {
+        document.writeln(x * y);
+      };
+      product(10, 20);
+
+      var evenOdd = function (x) {
+        if (x % 2 == 0) {
+          document.writeln("Even");
+        } else {
+          document.writeln("Odd");
+        }
+      };
+
+      evenOdd(4);
+
+      var table = (num) => {
+        for (let i = 1; i <= 10; i++) {
+          var temp = num * i;
+          document.writeln(temp + "<br>");
+        }
+      };
+      table(10);
+    </script>
+  </body>
+</html>

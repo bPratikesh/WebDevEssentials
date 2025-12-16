@@ -34,3 +34,7 @@ footer {
   text-decoration: none;
   color: black;
 }
+
+.contact-link:hover h1 {
+  color: rgb(60, 30, 228);
+}
