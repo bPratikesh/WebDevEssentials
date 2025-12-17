@@ -29,26 +29,53 @@
 
   <body>
     <div class="container mt-3 mb-5">
-      <a href="Main.html">Home</a>
+      <a href="Main.html">Portfolio</a>
     </div>
 
     <div class="login-wrapper">
       <div class="login-card">
-        <h4 class="text-center mb-3">Login</h4>
+        <h4 class="text-center mb-3">Contact Me</h4>
 
         <form>
           <div class="mb-3">
-            <label class="form-label fw-bold">Username:</label>
+            <label class="form-label fw-bold">Name:</label>
             <input
               type="text"
               class="form-control"
-              placeholder="Enter username"
+              placeholder="Enter Name"
+              required
             />
           </div>
 
           <div class="mb-3">
-            <label class="form-label fw-bold">Password:</label>
-            <input type="password" class="form-control" />
+            <label class="form-label fw-bold">Email:</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Enter Email"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label fw-bold">Mobile Number:</label>
+            <input
+              type="tel"
+              class="form-control"
+              placeholder="Enter Mobile Number"
+              pattern="[0-9]{10}"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label fw-bold">Message:</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter Message"
+              required
+            />
           </div>
 
           <button type="submit" class="btn btn-primary mb-2">Submit</button>
