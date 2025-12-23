@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Event Handling</h1>
+    <h1 id="para1"></h1>
+    <input type="text" id="ipl" />
+    <button onclick="msg()" id="btn1">Click</button>
+
+    <div onmouseover="mouseOver()">
+      <p id="para2">Mouse Over</p>
+    </div>
+
+    <h2 id="head2"></h2>
+    <input type="text" />
+
+    <script>
+      //onclick
+      function msg() {
+        document.getElementById("para1").innerHTML = "Welcome User!";
+        document.getElementById("btn1").innerHTML = "Clicked";
+        var v1 = document.getElementById("ipl").value;
+        console.log(v1);
+      }
+
+      function mouseOver() {
+        document.getElementById("para2").innerHTML = "Done";
+        document.getElementById("para2").style.backgroundColor = "Grey";
+      }
+
+      document.addEventListener("click", function () {
+        myFunc();
+      });
+      function myFunc() {
+        document.getElementById("head2").style.backgroundColor = "lightblue";
+        document.getElementById("head2").innerHTML = "Heyyyy";
+      }
+    </script>
+  </body>
+</html>
