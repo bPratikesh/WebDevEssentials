@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Event Propagation and Delegation</h1>
+
+    <div
+      class="div1"
+      style="background-color: green; padding: 30px; border: 2px solid black"
+    >
+      Component1
+      <div
+        class="div2"
+        style="
+          background-color: rgb(15, 58, 157);
+          padding: 30px;
+          border: 2px solid black;
+        "
+      >
+        Component2
+        <div
+          class="div3"
+          style="
+            background-color: rgb(230, 71, 14);
+            padding: 30px;
+            border: 2px solid black;
+          "
+        >
+          Componenet3
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let div1 = document.querySelector(".div1");
+      let div2 = document.querySelector(".div2");
+      let div3 = document.querySelector(".div3");
+
+      div1.addEventListener(
+        "click",
+        function (event) {
+          alert("Component 1 is clicked");
+        },
+        true
+      );
+      div2.addEventListener(
+        "click",
+        function (event) {
+          alert("Component 2 is clicked");
+        },
+        true
+      );
+      div3.addEventListener(
+        "click",
+        function (event) {
+          alert("Component 3 is clicked");
+        },
+        true
+      );
+    </script>
+  </body>
+</html>
