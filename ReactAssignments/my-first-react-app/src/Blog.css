@@ -1,0 +1,16 @@
+.blog-container {
+  border: 2px solid black;
+  padding: 20px;
+  max-width: 500px;
+  margin: 20px auto;
+  border-radius: 8px;
+  background-color: rgb(253, 246, 246);
+  box-shadow: 2px 2px 12px #aaa;
+}
+
+.blog-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
